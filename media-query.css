@@ -1,0 +1,192 @@
+/* MEDIA QUERY */
+/* XL LARGE LAPTOPS : 1280px-1536px */
+@media (max-width: 84rem){
+    /* 1340/16px=83.75 */
+    /* 1344/16px=84 */
+
+    html{
+        font-size: 56.25%;
+    }
+}
+
+/* LG SMALL LAPTOPS : 1024px-1280px */
+@media (max-width: 76rem){
+    /* 1207/16px=75.44 */
+    /* 1216/16px=76 */
+
+    html{
+        font-size: 50%;
+    }
+
+    .combo-collection-container{
+        gap: 2rem;
+    }
+}
+
+/* LG SMALL LAPTOPS : 1024px-1280px */
+@media (max-width: 67rem){
+    /* 1,072/16px=67 */
+    
+
+    html{
+        font-size: 43.75%;
+    }
+
+    .footer-container{
+        justify-content: space-evenly;
+    }
+
+    
+}
+
+
+@media (max-width: 59rem){
+    /* 944/16px=59 */
+    
+    html{
+        font-size: 37.5%;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        justify-content: center;
+        max-width: 45rem;
+    }
+
+    .hero-img-container{
+        max-width: 28rem;
+        width: 90%;
+    }
+
+    .hero-heading{
+        font-size: 7rem;
+    }
+
+    .brandshowcase-container{
+        max-width: 45rem;
+        grid-template-columns: 1fr        
+    }
+
+    .combo-collection-container{
+        flex-direction: column;
+        max-width: 45rem;
+    }
+
+    .image-section{
+        align-items: center;
+        flex-direction: column;
+       max-width: 45rem
+       
+    }
+
+    .img-h4{
+        font-size: 2rem;
+    }
+
+    .customer-review-container{
+        flex-direction: column;
+        max-width: 45rem;
+    }
+    .customer-review-background h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 36rem){
+      /* 576/16px=59 */
+     
+      html{
+        font-size: 31.25%;
+    }
+    .hero-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%
+
+    }
+
+      .hero-img-container{
+        max-width: 32rem;
+        width: 100%;
+    }
+
+    .hero-heading{
+        font-size: 7.2rem;
+    }
+
+    .brandshowcase-container{
+        padding: 0 4;
+        margin: 0 auto;
+        max-width: 104rem;
+        width: 100%;
+        grid-template-columns: 1fr    
+    }
+
+    .display-img{
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.showcase-p{
+    font-size: 3.7rem;
+}
+    
+.combo-collection-container{
+    margin: 0 auto;
+    align-items: center;
+    width: 95%;
+    max-width: 100rem
+    
+    
+    
+}
+
+.combo-collection-img{
+    width: 100%;
+    height: auto;
+  margin-bottom: 1rem;
+  max-width: 100rem;
+  margin: 0 auto;
+
+}
+
+.combo-collection-paragraph{
+    font-size: 3.5rem;
+}
+
+.combo-collection-heading{
+    font-size: 5rem;
+}
+
+.img-paragraph{
+    margin-top: 1rem;
+    font-size: 8rem;
+}
+.customer-review-container{
+    width: 100%;
+    max-width: 110rem;
+    align-items: center;
+}
+
+.customer-review-img{
+    width: 100%;
+    max-width: 110rem;
+}
+
+.review-paragraph{
+    font-size: 2.5rem;
+}
+
+
+}
