@@ -50,6 +50,8 @@
     .show-menu-btn{
     display: block;
     cursor: pointer;
+    color: #000000;
+    font-size: 4rem;
 }
 
 .nav-bar-container{
@@ -74,6 +76,15 @@
     flex-direction: column;
     background-color: #ffffff;
     padding: 3rem 0;
+    font-size: 4rem;
+}
+
+.sub-nav-bar a{
+    font-size: 4rem;
+}
+
+.logo{
+    font-size: 4rem;
 }
 
 #check:checked ~ .sub-nav-bar{
@@ -83,6 +94,12 @@
 .shop{
     display: none;
 }
+
+.hero-paragraph{
+    font-size: 3rem;
+    text-align: center;
+}
+
 
     .hero-container{
         flex-direction: column;
@@ -174,16 +191,51 @@
 .show-menu-btn{
     display: block;
     cursor: pointer;
+    color: #000000;
+    font-size: 4rem;
+}
+
+.nav-bar-container{
+    position: relative;
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sub-nav-bar{
     display: none;
     flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem 0;
+    font-size: 4rem;
+}
+
+.sub-nav-bar a{
+    font-size: 4rem;
+}
+
+.logo{
+    font-size: 4rem;
 }
 
 #check:checked ~ .sub-nav-bar{
     display: flex;
 }
+
+.shop{
+    display: none;
+}
+
 
     .hero-text-container{
         display: flex;
@@ -198,8 +250,6 @@
         align-items: center;
         flex-direction: column;
         width: 90%
-        
-
     }
 
       .hero-img-container{
@@ -210,6 +260,11 @@
 
     .hero-heading{
         font-size: 6rem;
+    }
+
+    .hero-paragraph{
+        font-size: 3.5rem;
+        text-align: center;
     }
 
     .brandshowcase-container{
@@ -293,6 +348,55 @@
         font-size: 25%;
       }
 
+      .show-menu-btn{
+    display: block;
+    cursor: pointer;
+    color: #000000;
+    font-size: 4rem;
+}
+
+.nav-bar-container{
+    position: relative;
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-nav-bar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem 0;
+    font-size: 4rem;
+    
+}
+
+.sub-nav-bar a{
+    font-size: 4rem;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+#check:checked ~ .sub-nav-bar{
+    display: flex;
+}
+
+.shop{
+    display: none;
+}
+
       .hero-paragraph{
         font-size: 3.5rem;
         text-align: center;
@@ -302,7 +406,6 @@
         max-width: 35rem;
           width: 100%;
           font-size: 3.5rem;
-          
       }
 
       .customer-review-card{
@@ -315,8 +418,6 @@
       .review-paragraph{
     font-size: 3rem;
 }
-
-
 
     }
 
