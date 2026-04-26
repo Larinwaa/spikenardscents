@@ -47,14 +47,51 @@
         font-size: 37.5%;
     }
 
+    .show-menu-btn{
+    display: block;
+    cursor: pointer;
+}
+
+.nav-bar-container{
+    position: relative;
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-nav-bar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem 0;
+}
+
+#check:checked ~ .sub-nav-bar{
+    display: flex;
+}
+
+.shop{
+    display: none;
+}
+
     .hero-container{
         flex-direction: column;
         justify-content: center;
-        max-width: 45rem;
+        max-width: 150rem;
     }
 
     .hero-img-container{
-        max-width: 28rem;
+        max-width: 50rem;
         width: 90%;
     }
 
@@ -62,20 +99,37 @@
         font-size: 7rem;
     }
 
+    .hero-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+    }
+
     .brandshowcase-container{
-        max-width: 45rem;
+        max-width: 150rem;
         grid-template-columns: 1fr        
     }
 
+    .showcase-p{
+    font-size: 2.5rem;
+}
+
     .combo-collection-container{
         flex-direction: column;
-        max-width: 45rem;
+        max-width: 150rem;
+         align-items: center;
+        justify-content: center;
     }
+
+    .combo-collection-paragraph{
+    font-size: 2.5rem;
+}
 
     .image-section{
         align-items: center;
         flex-direction: column;
-       max-width: 45rem
+       max-width: 150rem
        
     }
 
@@ -85,10 +139,28 @@
 
     .customer-review-container{
         flex-direction: column;
-        max-width: 45rem;
+        max-width: 150rem;
+         align-items: center;
+        justify-content: center;
+       
     }
     .customer-review-background h3{
         text-align: center;
+    }
+
+    .review-paragraph{
+    font-size: 2.5rem;
+}
+
+    .footer-container{
+        align-items: start;
+        max-width: 150rem;
+        width: 100%;
+        margin: 0 auto;
+        gap: 5rem;
+        padding: 6rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr   
     }
 }
 
@@ -96,8 +168,23 @@
       /* 576/16px=59 */
      
       html{
-        font-size: 31.25%;
+        font-size: 31.25%; 
     }
+
+.show-menu-btn{
+    display: block;
+    cursor: pointer;
+}
+
+.sub-nav-bar{
+    display: none;
+    flex-direction: column;
+}
+
+#check:checked ~ .sub-nav-bar{
+    display: flex;
+}
+
     .hero-text-container{
         display: flex;
         flex-direction: column;
@@ -106,20 +193,23 @@
     }
 
     .hero-container{
+        max-width: 100rem;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 90%
+        
 
     }
 
       .hero-img-container{
         max-width: 32rem;
         width: 100%;
+        object-fit: contain;
     }
 
     .hero-heading{
-        font-size: 7.2rem;
+        font-size: 6rem;
     }
 
     .brandshowcase-container{
@@ -134,8 +224,7 @@
     width: 100%;
     max-width: 60rem;
     height: auto;
-    object-fit: cover;
-    
+    object-fit: cover; 
 }
 
 .showcase-p{
@@ -147,9 +236,6 @@
     align-items: center;
     width: 95%;
     max-width: 100rem
-    
-    
-    
 }
 
 .combo-collection-img{
@@ -158,7 +244,6 @@
   margin-bottom: 1rem;
   max-width: 100rem;
   margin: 0 auto;
-
 }
 
 .combo-collection-paragraph{
@@ -175,18 +260,63 @@
 }
 .customer-review-container{
     width: 100%;
-    max-width: 110rem;
+    max-width: 100rem;
     align-items: center;
 }
 
 .customer-review-img{
     width: 100%;
-    max-width: 110rem;
+    max-width: 100rem;
 }
 
 .review-paragraph{
     font-size: 2.5rem;
 }
 
+.footer-container{
+        align-items: start;
+        max-width: 100rem;
+        width: 100%;
+        margin: 0 auto;
+        gap: 5rem;
+        padding: 6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr   
+    }
 
 }
+
+@media (max-width: 28rem){
+      /* 408/16px=25.5 */
+     
+      html{
+        font-size: 25%;
+      }
+
+      .hero-paragraph{
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+      .hero-btn a{
+        max-width: 35rem;
+          width: 100%;
+          font-size: 3.5rem;
+          
+      }
+
+      .customer-review-card{
+    width: 100%;
+    padding-bottom: 2rem;
+    max-width: 40rem;
+
+      }
+
+      .review-paragraph{
+    font-size: 3rem;
+}
+
+
+
+    }
+

@@ -26,11 +26,55 @@ FONT-WEIGHT
 LINE HEIGHTS
 1.2/1.5
 
-LETTER SPACING
+SPACING SYSTEM
+5px /10px /15px /20px /25px /30px /40px /50px
 
 FONT FAMILY
+'Inter', 'Helvetica Neue', 'Helvetical', 'Arial', sans-serif;
 
 */
+
+/* GLOBAL STYLES */
+:root{
+    /*-----FONT SIZE----- */
+--text-sm: 1.2rem;
+--text-base: 1.6rem;
+--text-paragraph: 2.0rem;
+--text-h5: 2.4rem;
+--text-h4: 3.2rem;
+--text-h3: 4.0rem;
+--text-h2: 4.8rem;
+--text-h1: 9rem;
+
+/* ----FONT WEIGHT----  */
+--font-weight: 400;
+--font-weight-bold: 700;
+
+/* LINE HEIGHT*/
+--line-height-tight: 1.2;
+--line-height-normal: 1.5;
+
+/* LETTER SPACING */
+--letter-spacing-tight: -2px;
+
+/* FONT FAMILY */
+--font-family: 'Inter', 'Helvetica Neue', 'Helvetical', 'Arial', sans-serif;
+
+/* COLORS */
+--primary-base: #1c1c1c;
+--primary-tint: #3a3a3a;
+--primary-shade: #0f0f0f;
+--secondary-base: #f6f1e8;
+--secondary-tint: #fbf8f3;
+--secondary-shade: #e8e1d6;
+--tertiary-base: #c6a753;
+--tertiary-tint: #d8be82;
+--tertiary-shade: #a88b43;
+--white: #ffffff;
+--black: #000000;
+}
+
+
 
 *{
     box-sizing: border-box;
@@ -43,63 +87,62 @@ html {
 }
 
 body {
-    font-family:'Inter', 'Helvetica Neue', 'Helvetical', 'Arial', sans-serif;
-    font-size: 1rem;
-    color: #1c1c1c;
-    font-weight: 400    
+    font-family:var(--font-family);
+    line-height: var(--line-height-normal);
+    color: var(--primary-base);
+    font-weight: var(--font-weight)  
 }
 
 h1,h2,h3,h4,h5{
-    font-weight: 700;
-    line-height: 1.2;
-    /* letter-spacing: ; */
-    font-family:'Inter', 'Helvetica Neue', 'Helvetical', 'Arial', sans-serif;
-    color: #1c1c1c;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    font-family: var(--font-family);
+    color: var(--primary-base)
 }
 
 h1 {
-    font-size: 9rem;
+    font-size: var(--text-h1);
     line-height: 100%;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     letter-spacing: -1px;
-    margin: 16px 0;  
+    margin: 1.6rem 0;  
 }
 
 h2{
     text-align: center;
-    font-size: 4.8rem;
+    font-size: var(--text-h2);
 }
 
 h3{
     text-align: center;
-    font-size: 4.0rem;
+    font-size: var(--text-h3);
 }
 
 h4{
     text-align: center;
-    font-size: 3.2rem ;
+    font-size: var(--text-h4) ;
 }
 
 h5{
     text-align: center;
-    font-size: 2.4rem;
+    font-size: var(--text-h5);
 }
 
 a{
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: var(--text-paragraph);
     display: inline-block;
-    color: #1c1c1c;
+    color: var(--primary-base);
 }
 
 ul{
     list-style: none;
-    font-size: 2rem ;
+    font-size: var(--text-paragraph);
 }
 
 p, a{
-    font-size: 2.0rem;
-    font-weight: 500;
+    font-size: var(--text-paragraph);
+    font-weight: var(--font-weight);
     margin: 2.4, 0;   
 }
 
@@ -110,17 +153,16 @@ img{
 }
 
 input[type="email"]{
-    font-size: 2rem;
-    font-weight: 500;
-    font-family:'Inter', 'Helvetica Neue', 'Helvetical', 'Arial', sans-serif;
+    font-size: var(--text-paragraph);
+    font-weight: var(--font-weight);
+    font-family: var(--font-family);
 }
-
 
 /* COMPONENT */
 
 .shop{
-    background-color: #c6a753;
-    color: #fbf8f3;
+    background-color: var(--tertiary-base);
+    color: var(--secondary-tint);
     max-width: 10rem;
     width: 100%;
     border-radius: .5rem; 
@@ -130,16 +172,16 @@ input[type="email"]{
 }
 
 .shop:link, .shop:visited{
-    background-color: #c6a753;
-    color: #fbf8f3;
-    border: 1px solid #c6a753;
+    background-color: var(--tertiary-base);
+    color: var(--secondary-tint);
+    border: 1px solid var(--tertiary-base);
 }
 
 
 .shop:hover, .shop:active{
-    background-color: #a88b43;
-    color: #fbf8f3;
-    border: 1px solid #a88b43;
+    background-color: var(--tertiary-shade);
+    color: var(--secondary-tint);
+    border: 1px solid var(--tertiary-shade);
 }
 
 /* NAV-BAR */
@@ -156,14 +198,14 @@ input[type="email"]{
     max-width: 140rem;
     color: #1c1c1c;
     list-style: none;
-    font-family: 'Inter', 'Helvetica Neue', 'Helvetical', 'Arial', sans-serif;
+    font-family: var(--font-family);
     line-height: 2rem;
-    font-weight: 400;
-    font-size: 2rem   
+    font-weight: var(--font-weight);
+    font-size: var(--text-paragraph);
 }
 
 .logo{
-    color: #1c1c1c;
+    color: var(--primary-base);
     font-size: 2.5rem;
 }
 
@@ -172,26 +214,28 @@ input[type="email"]{
     align-items: center;
     display: flex;
     list-style: none;
-    color: #2a2a2a;
+    color: var(--primary-base);
 }
 
 .sub-nav-bar{
     display: flex;
     justify-content: center;
     gap: 2rem;   
-    color: #1c1c1c;
+    color: var(--primary-base);
 }
 
 .nav{
-    color: #1c1c1c;
+    color: var(--primary-base);
 }
 
-
+#check, .show-menu-btn{
+    display: none;
+}
 
 /* HERO-SECTION */
 .hero-background{
     width:100%;
-    background-color: #e8e1d6;
+    background-color: var(--secondary-shade);
 }
 
 .hero-container{
@@ -210,8 +254,8 @@ input[type="email"]{
 }
 
 .hero-btn a{
-    background-color: #b89f5b;
-    color: #fbf8f3;
+    background-color: var(--tertiary-shade);
+    color: var(--secondary-tint);
     max-width: 20rem;
     width: 100%;
     border-radius: .5rem; 
@@ -229,14 +273,14 @@ input[type="email"]{
 }
 
 .span-scents{
-    color: #c6a753
+    color: var(--tertiary-base);
 }
 
 
 /* BRAND SHOWCASE */
 .brand-showcase-background{
      width: 100%;
-     background-color: #fbf8f3;
+     background-color: var(--secondary-tint);
 
 }
 .brandshowcase-container{
@@ -258,7 +302,7 @@ input[type="email"]{
     align-items: center;
     overflow: hidden;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--secondary-tint);
     border-radius: 2rem  
   
 }
@@ -272,21 +316,21 @@ input[type="email"]{
 }
 
 .display-cta{
-    background-color: #b89f5b;
-    color: #fbf8f3;
+    background-color: var(--tertiary-shade);
+    color: var(--secondary-tint);
     max-width: 15rem;
     width: 100%;
     border-radius: .5rem; 
     padding: 1rem;
     margin: 1rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
 }
 
 /* COMBO COLLECTION */
 .combo-collection-backgroud{
     width: 100% ;
-    background-color: #f3f3f3;
+    background-color: var(--white);
 
 }
 .combo-collection-container{ 
@@ -306,7 +350,7 @@ input[type="email"]{
 .combo-card{
     width: 100%;
    max-width: 40rem;
-    background-color: #ffffff;
+    background-color: var(--white);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -333,13 +377,11 @@ input[type="email"]{
     margin-top: .5rem;
 }
 
-.brand-story-img-2{
-    grid-row: 2/3;
-}
+
 /* Image Section */
 .image-background{
     width: 100%;
-    background-color: #e8e1d6;
+    background-color: var(--white);
     padding: 0;
        border-radius: 5rem ;
        overflow: hidden;
@@ -379,8 +421,8 @@ input[type="email"]{
 }
 
 .shop-img{
-    background-color: #c6a753;
-    color: #fbf8f3;
+    background-color: var(--tertiary-base);
+    color: var(--secondary-tint);
     max-width: 12rem;
     width: 100%;
     border-radius: .5rem; 
@@ -401,7 +443,7 @@ input[type="email"]{
 /* CUSTOMER REVIEW */
 .customer-review-background{
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: var(--secondary-shade);
 }
 
 .customer-review-container{
@@ -425,11 +467,8 @@ input[type="email"]{
    gap: 2rem;
    margin-bottom: 3rem;
    margin-top: 3rem;
-    background-color: #ffffff;
-    border-radius: 3rem
-    
-      
-    
+    background-color: var(--secondary-base);
+    border-radius: 3rem 
 }
 
 .customer-review-img{
@@ -461,7 +500,7 @@ input[type="email"]{
 /* FOOTER */
 .footer-background{
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--white);
     
 }
 
@@ -483,7 +522,7 @@ input[type="email"]{
     max-width: 150rem;
     height: 4rem;
     border-radius: 1rem;
-    border: 1px solid #1c1c1c;
+    border: 1px solid var(--primary-base);
     padding: 0.5rem 0.3rem;
  }
 
@@ -491,9 +530,9 @@ input[type="email"]{
     max-width: 20rem;
     height: 4rem;
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 400;
-    background-color: #1c1c1c;
+    background-color: var(--primary-base);
     border-radius: 1rem;
 }
 
