@@ -21,6 +21,9 @@
     .combo-collection-container{
         gap: 2rem;
     }
+
+    
+      
 }
 
 /* LG SMALL LAPTOPS : 1024px-1280px */
@@ -95,6 +98,10 @@
     display: none;
 }
 
+.logo{
+    font-size: 5rem;
+}
+
 .hero-paragraph{
     font-size: 3rem;
     text-align: center;
@@ -113,7 +120,7 @@
     }
 
     .hero-heading{
-        font-size: 7rem;
+        font-size: 8rem;
     }
 
     .hero-text-container{
@@ -140,7 +147,7 @@
     }
 
     .combo-collection-paragraph{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
     .image-section{
@@ -151,16 +158,42 @@
     }
 
     .img-h4{
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
-    .customer-review-container{
-        flex-direction: column;
-        max-width: 150rem;
-         align-items: center;
-        justify-content: center;
-       
-    }
+    .img-paragraph-2{
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+
+.shop-img{
+    font-size: 4rem;
+    margin-top: 3rem;
+    max-width: 25rem;
+}
+   
+.customer-review-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    
+}
+
+.customer-review-card{
+    width: 100%;
+    padding-bottom: 2rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}
+
     .customer-review-background h3{
         text-align: center;
     }
@@ -184,26 +217,26 @@
 @media (max-width: 36rem){
       /* 576/16px=59 */
      
-      html{
-        font-size: 31.25%; 
+ html{
+ font-size: 31.25%; 
     }
 
 .show-menu-btn{
-    display: block;
-    cursor: pointer;
-    color: #000000;
-    font-size: 4rem;
+ display: block;
+cursor: pointer;
+color: #000000;
+font-size: 4rem;
 }
 
 .nav-bar-container{
-    position: relative;
-    width: 100%;
+position: relative;
+width: 100%;
 }
 
 .nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .sub-nav-bar{
@@ -236,7 +269,9 @@
     display: none;
 }
 
-
+.logo{
+    font-size: 5rem;
+}
     .hero-text-container{
         display: flex;
         flex-direction: column;
@@ -259,7 +294,7 @@
     }
 
     .hero-heading{
-        font-size: 6rem;
+        font-size: 10rem;
     }
 
     .hero-paragraph{
@@ -302,30 +337,84 @@
 }
 
 .combo-collection-paragraph{
-    font-size: 3.5rem;
+    font-size: 4rem;
+      text-align: center;
 }
 
 .combo-collection-heading{
     font-size: 5rem;
 }
 
+
+
 .img-paragraph{
     margin-top: 1rem;
     font-size: 8rem;
 }
-.customer-review-container{
-    width: 100%;
-    max-width: 100rem;
-    align-items: center;
+
+.img-h4{
+    font-size: 5rem;
 }
 
-.customer-review-img{
+.img-paragraph-2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.shop-img{
+    font-size: 4rem;
+    margin-top: 3rem;
+    max-width: 25rem;
+}
+
+
+.customer-review-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    
+}
+
+.customer-review-card{
     width: 100%;
-    max-width: 100rem;
+    padding-bottom: 2rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}
+
+
+    .customer-review-img{
+    width: 100%;
+    /* max-width: 50rem; */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+}
+
+.star{
+    width: 6rem;
+   
+}
+
+.star-rating{
+    display: flex;
+    gap: 4rem;
 }
 
 .review-paragraph{
-    font-size: 2.5rem;
+    font-size: 4rem;
+    text-align: left;
+}
+
+.review-name{
+    font-size: 3rem;
 }
 
 .footer-container{
@@ -344,80 +433,163 @@
 @media (max-width: 28rem){
       /* 408/16px=25.5 */
      
-      html{
-        font-size: 25%;
-      }
+ html{
+font-size: 25%;
+ }
 
-      .show-menu-btn{
-    display: block;
-    cursor: pointer;
-    color: #000000;
-    font-size: 4rem;
+.show-menu-btn{
+display: block;
+cursor: pointer;
+color: #000000;
+font-size: 6rem;
 }
 
 .nav-bar-container{
-    position: relative;
-    width: 100%;
+position: relative;
+ width: 100%;
 }
 
 .nav-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .sub-nav-bar{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    flex-direction: column;
-    background-color: #ffffff;
-    padding: 3rem 0;
-    font-size: 4rem;
-    
+display: none;
+ flex-direction: column;
+position: absolute;
+top: 100%;
+left: 0;
+ width: 100%;
+z-index: 1000;
+flex-direction: column;
+ background-color: #ffffff;
+padding: 3rem 0;
+font-size: 4rem;  
 }
 
 .sub-nav-bar a{
-    font-size: 4rem;
+font-size: 4rem;
 }
 
 .logo{
-    font-size: 4rem;
+font-size: 4rem;
 }
 
 #check:checked ~ .sub-nav-bar{
-    display: flex;
+display: flex;
 }
 
 .shop{
-    display: none;
+display: none;
 }
 
-      .hero-paragraph{
-        font-size: 3.5rem;
-        text-align: center;
-      }
+.hero-heading{
+ font-size: 10rem;
+   
+}
 
-      .hero-btn a{
-        max-width: 35rem;
-          width: 100%;
-          font-size: 3.5rem;
-      }
+.hero-paragraph{
+font-size: 4rem;
+ text-align: center;
+ }
 
-      .customer-review-card{
+.hero-btn a{
+ max-width: 35rem;
+ width: 100%;
+ font-size: 3.5rem;
+margin-top: 0.5rem;
+}
+
+.display-cta{
+max-width: 30rem;
+ width: 100%;
+ margin-top: 0.5rem;
+ }
+
+.display-p{
+font-size: 5rem;
+ }
+
+ .combo-collection-paragraph{
+    font-size: 4rem;
+    text-align: center;
+}
+
+ .combo-collection-img{
+width: 100%;
+height: auto;
+margin-bottom: 1rem;
+max-width: 60rem;
+margin: 0 auto;
+}
+
+.img-h4{
+    font-size: 4rem;
+}
+
+.img-paragraph-2{
+    font-size: 4rem;
+    text-align: center;
+}
+.shop-img{
+    font-size: 3rem;
+    margin-top: 3rem;
+    max-width: 25rem;
+}
+
+.customer-review-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    
+}
+
+.customer-review-card{
     width: 100%;
     padding-bottom: 2rem;
-    max-width: 40rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}
 
-      }
 
-      .review-paragraph{
+    .customer-review-img{
+    width: 100%;
+    /* max-width: 50rem; */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 2.5rem;
+}
+
+.star{
+    width: 6rem;
+   
+}
+
+.star-rating{
+    display: flex;
+    gap: 4rem;
+}
+
+.review-paragraph{
+    font-size: 4rem;
+    text-align: left;
+}
+
+.review-name{
     font-size: 3rem;
 }
 
-    }
+
+
+}
+
 
