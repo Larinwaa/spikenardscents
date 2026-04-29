@@ -320,12 +320,12 @@ align-items: center;
 
 .display-cta{
 max-width: 15rem;
- width: 100%;
+ width: auto;
  margin-top: 0.5rem;
  }
 
 .display-p{
-font-size: 2rem;
+font-size: 4rem;
  }
 
 .showcase-p{
@@ -343,12 +343,12 @@ font-size: 2rem;
     width: 100%;
     height: auto;
   margin-bottom: 1rem;
-  max-width: 60rem;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto  1rem;
 }
 
 .combo-collection-paragraph{
-    font-size: 4rem;
+    font-size: 3rem;
       text-align: center;
 }
 
@@ -428,7 +428,7 @@ font-size: 2rem;
 }
 
 .review-name{
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 .footer-container{
@@ -518,7 +518,7 @@ margin-top: 0.5rem;
 
 .display-cta{
 max-width: 15rem;
- width: 100%;
+ width: auto;
  margin-top: 0.5rem;
  }
 
@@ -602,7 +602,7 @@ margin: 0 auto;
 }
 
 .review-name{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 
