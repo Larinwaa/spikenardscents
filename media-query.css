@@ -332,7 +332,7 @@ align-items: center;
     width: 100%;
     height: auto;
   margin-bottom: 1rem;
-  max-width: 100rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
@@ -364,7 +364,7 @@ align-items: center;
 .shop-img{
     font-size: 4rem;
     margin-top: 3rem;
-    max-width: 25rem;
+    max-width: 20rem;
 }
 
 
@@ -399,13 +399,13 @@ align-items: center;
 }
 
 .star{
-    width: 6rem;
+    width: 4rem;
    
 }
 
 .star-rating{
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .review-paragraph{
@@ -503,13 +503,13 @@ margin-top: 0.5rem;
 }
 
 .display-cta{
-max-width: 30rem;
+max-width: 20rem;
  width: 100%;
  margin-top: 0.5rem;
  }
 
 .display-p{
-font-size: 5rem;
+font-size: 3rem;
  }
 
  .combo-collection-paragraph{
@@ -521,7 +521,7 @@ font-size: 5rem;
 width: 100%;
 height: auto;
 margin-bottom: 1rem;
-max-width: 60rem;
+max-width: 45rem;
 margin: 0 auto;
 }
 
@@ -536,7 +536,7 @@ margin: 0 auto;
 .shop-img{
     font-size: 3rem;
     margin-top: 3rem;
-    max-width: 25rem;
+    max-width: 20rem;
 }
 
 .customer-review-container{
